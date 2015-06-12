@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: "dev/scss/**/*.scss",
-        tasks: ["sass", "cmq", "postcss"]
+        tasks: ["sass", "cmq", "postcss", "cssmin"]
       },
       js: {
         files: ["dev/js/**/*.js", "Gruntfile.js"],
@@ -62,6 +62,19 @@ module.exports = function(grunt) {
 	        'style.css': 'style.css'
 	      }
 	    }
+    },
+
+    cssmin: {
+      options: {
+        keepSpecialComments: 1,
+        noAdvanced: true,
+        banner: '/* ======= Guilherme Marconi: http://guilhermemarconi.me =======*/'
+      },
+      css: {
+        files: {
+          "style.css": "style.css"
+        }
+      }
     },
 
     uglify: {
@@ -173,7 +186,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask("default", ["browserSync", "watch"]);
-  grunt.registerTask("css", ["sass", "cmq", "postcss"]);
+  grunt.registerTask("css", ["sass", "cmq", "postcss", "cssmin"]);
   grunt.registerTask("img", ["imagemin"]);
   grunt.registerTask("js", ["uglify"]);
   grunt.registerTask("svg", ["svgmin"]);
