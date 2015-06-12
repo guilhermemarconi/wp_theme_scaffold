@@ -1,14 +1,19 @@
-# WordPress Theme scaffold
+# WordPress Theme Scaffold
 
-WordPress default theme structure for scaffold
+WordPress default theme structure for scaffold.
 
 ## Getting Started
 
 Clone the repository
 
 ```bash
-$ git clone git@github.com:guilhermemarconi/wp_theme_scaffold.git
-$ cd wp_theme_scaffold
+$ git clone git@github.com:guilhermemarconi/wp_theme_scaffold.git && cd wp_theme_scaffold
+```
+
+_You can change the directory name of your theme adding its name cloning the repository:_
+
+```bash
+$ git clone git@github.com:guilhermemarconi/wp_theme_scaffold.git mytheme && cd mytheme
 ```
 
 Install dependencies
@@ -30,3 +35,7 @@ Run `Grunt`
 ```bash
 $ grunt
 ```
+
+## License
+
+MIT
