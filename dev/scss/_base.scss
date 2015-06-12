@@ -1,0 +1,195 @@
+@import 'normalize';
+
+/* ==========================================================================
+   Variáveis
+   ========================================================================== */
+
+/* Cores
+   ========================================================================== */
+
+
+
+/* Fontes
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Mixin(s)
+   ========================================================================== */
+@mixin mq($size, $max: false) {
+  @if ($max) {
+    @media (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Tipografia
+   ========================================================================== */
+html {
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+body,
+input,
+button {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1em; }
+h5 { font-size: 0.83em; }
+h6 { font-size: 0.75em; }
+
+table {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  border-radius: 3px;
+
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+}
+
+p {
+  margin: 1.2em 0;
+  line-height: 1.5;
+}
+
+
+/* ==========================================================================
+   Ajustes de Elementos e Classes Gerais
+   ========================================================================== */
+*:focus {
+    outline: none !important;
+}
+
+a {
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  padding: 1px 3px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #efefef;
+}
+
+pre {
+  display: block;
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #efefef;
+}
+
+blockquote {
+  p {
+    margin-bottom: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  cite {
+    color: #aaa;
+    font-size: 14px;
+    font-style: italic;
+
+    &:before {
+      content: '\2014';
+      margin-right: 7px;
+    }
+  }
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+
+  img[class*="wp-image-"] {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .wp-caption-text {
+    margin: 0 0 0.8075em;
+    padding: 0.8075em 15px;
+    font-size: 0.8075em;
+    line-height: 1.3;
+    background: #eee;
+  }
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
+.wp-smiley {
+  margin-top: -4px;
+}
+
+
+/* ==========================================================================
+   Seleção de Texto
+   ========================================================================== */
+/* ::-moz-selection {
+    background: $color-base-green;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: $color-base-green;
+    color: #fff;
+    text-shadow: none;
+} */
