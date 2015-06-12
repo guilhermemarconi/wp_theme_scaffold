@@ -12,7 +12,7 @@ $ git clone git@github.com:guilhermemarconi/wp_theme_scaffold.git mytheme && cd 
 
 > `mytheme` _will be the directory name of your theme and can be any name you want._
 
-To `push` your new theme into your own repository, [check this out][http://stackoverflow.com/questions/5181845/git-push-existing-repo-to-a-new-and-different-remote-repo-server].
+To `push` your new theme into your own repository, [check this out](http://stackoverflow.com/questions/5181845/git-push-existing-repo-to-a-new-and-different-remote-repo-server).
 
 ### Local configuration
 
