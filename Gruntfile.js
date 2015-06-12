@@ -117,7 +117,7 @@ module.exports = function(grunt) {
       },
       options: {
         watchTask: true,
-        proxy: "dev",
+        proxy: "dev/[projectDir]",
         ghostMode: {
         	clicks: true,
           scroll: true,
@@ -139,6 +139,8 @@ module.exports = function(grunt) {
         exclusions: [
           ".DS_Store",
           "Thumbs.db",
+          "LICENSE",
+          "README.md",
           "Gruntfile.js",
           "package.json",
           "config.rb",
