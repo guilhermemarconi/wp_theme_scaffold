@@ -1,2 +1,3 @@
-# wp_theme_scaffold
+# WordPress Theme scaffold
+
 WordPress default theme structure for scaffold
