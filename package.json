@@ -1,0 +1,30 @@
+{
+  "name": "MyTheme",
+  "version": "0.1.0",
+  "description": "My awesome WordPress Theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guilhermemarconi/wp_theme_scaffold.git"
+  },
+  "author": "Guilherme Marconi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guilhermemarconi/wp_theme_scaffold/issues"
+  },
+  "homepage": "https://github.com/guilhermemarconi/wp_theme_scaffold",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.0.0",
+    "grunt-combine-media-queries": "^1.0.19",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-imagemin": "^0.9.3",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-dev-update": "^1.1.0",
+    "grunt-ftpush": "^0.3.3",
+    "grunt-sass": "^0.18.1",
+    "grunt-svgmin": "^2.0.1",
+    "matchdep": "^0.3.0"
+  }
+}
