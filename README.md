@@ -7,14 +7,10 @@ WordPress default theme structure for scaffold.
 Clone the repository
 
 ```bash
-$ git clone git@github.com:guilhermemarconi/wp_theme_scaffold.git && cd wp_theme_scaffold
-```
-
-_You can change the directory name of your theme adding its name cloning the repository:_
-
-```bash
 $ git clone git@github.com:guilhermemarconi/wp_theme_scaffold.git mytheme && cd mytheme
 ```
+
+> `mytheme` _will be the directory name of your theme and can be any name you want._
 
 Install dependencies
 
