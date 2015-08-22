@@ -131,7 +131,7 @@ module.exports = function(grunt) {
       },
       options: {
         watchTask: true,
-        proxy: "dev/[projectDir]",
+        proxy: "[projectDir].dev",
         ghostMode: {
         	clicks: true,
           scroll: true,
