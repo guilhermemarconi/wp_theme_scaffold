@@ -125,6 +125,7 @@ module.exports = function(grunt) {
       files: {
         src : [
         	'style.css',
+          'js/*.js',
         	'**/*.php',
         ]
       },
