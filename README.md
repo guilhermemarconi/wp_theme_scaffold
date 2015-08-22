@@ -12,23 +12,32 @@ $ git clone git@github.com:guilhermemarconi/wp_theme_scaffold.git mytheme && cd 
 
 > `mytheme` _will be the directory name of your theme and can be any name you want._
 
-To `push` your new theme into your own repository, [check this out](http://stackoverflow.com/questions/5181845/git-push-existing-repo-to-a-new-and-different-remote-repo-server).
+To `push` your new theme into your own repository, follow this steps:
+
+1. Create your new theme repo
+2. `git remote rename origin upstream`
+3. `git remote add origin URL_TO_YOUR_NEW_REPO`
+4. `git push origin master`
+
+And that's it! Your local project is now `push`ing to your new repo and you're ready to go for the next step! :smile:
 
 ### Local configuration
 
-Install dependencies
+Install dependencies with NPM
 
 ```bash
-$ npm install
+$ [sudo] npm install
 ```
 
-Go to `Gruntfile.js` and config `proxy` for Browser Sync at line 120
+> _Use_ `sudo` _only if you're on a UNIX based system. Windows CMD/Powershell doesn't need this._
+
+Go to `Gruntfile.js` and config `proxy` for Browser Sync at line 135
 
 ```
-proxy: "dev/[projectDir]"
+proxy: "[projectDir].dev"
 ```
 
-> `dev/[projectDir]` _uses my_ `Vagrant` _server as proxy. You must configure your own local server._
+> `[projectDir].dev` _uses my_ `Vagrant` _server as proxy. You must configure your own local server._
 
 Run `Grunt`
 
@@ -41,7 +50,7 @@ $ grunt
 To deploy your theme files, just run `grunt deploy`, but first you'll have to configure FTP access:
 
 1. Setting `username` and `password` in `.ftppass` file;
-2. Setting `host` and `dest` configurations (`Gruntfile.js:146` and `Gruntfile.js:151`, respectively).
+2. Setting `host` and `dest` configurations (`Gruntfile.js:143` and `Gruntfile.js:148`, respectively).
 
 ## License
 
