@@ -157,7 +157,6 @@ module.exports = function(grunt) {
           "README.md",
           "Gruntfile.js",
           "package.json",
-          "config.rb",
           "node_modules",
           ".ftppass",
           ".gitignore",
