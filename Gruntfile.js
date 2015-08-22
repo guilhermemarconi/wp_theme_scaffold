@@ -122,21 +122,17 @@ module.exports = function(grunt) {
     },
 
     browserSync: {
-      files: {
-        src : [
-        	'style.css',
-          'js/*.js',
-        	'**/*.php',
-        ]
-      },
-      options: {
-        watchTask: true,
-        proxy: "[projectDir].dev",
-        ghostMode: {
-        	clicks: true,
-          scroll: true,
-          links: true,
-          forms: true
+      dev: {
+        bsFiles: {
+          src : [
+          	'style.css',
+            'js/*.js',
+          	'**/*.php',
+          ]
+        },
+        options: {
+          watchTask: true,
+          proxy: "[projectDir].dev"
         }
       }
     },
