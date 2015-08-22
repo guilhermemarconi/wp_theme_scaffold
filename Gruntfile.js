@@ -158,6 +158,7 @@ module.exports = function(grunt) {
           ".gitignore",
           ".git",
           ".sass-cache",
+          ".sublime-grunt.cache",
           "dev"
         ]
       }
