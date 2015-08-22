@@ -18,14 +18,14 @@
     "grunt-browser-sync": "^2.0.0",
     "grunt-combine-media-queries": "^1.0.19",
     "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-cssmin": "^0.13.0",
     "grunt-contrib-imagemin": "^0.9.3",
-    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-dev-update": "^1.1.0",
     "grunt-ftpush": "^0.3.3",
     "grunt-postcss": "^0.5.1",
-    "grunt-sass": "^0.18.1",
+    "grunt-sass": "^1.0.0",
     "grunt-svgmin": "^2.0.1",
     "matchdep": "^0.3.0"
   }
