@@ -1,37 +1,24 @@
 # WordPress Theme Scaffold
 
-WordPress basic default theme structure for scaffold.
+A basic WordPress Theme Generator for Yeoman
 
 ## Getting Started
 
-### Clone the repository
+Install Yeoman and the Generator
 
 ```bash
-$ git clone git@github.com:guilhermemarconi/wp_theme_scaffold.git mytheme && cd mytheme
+$ npm i -g yeoman generator-wp-theme-scaffold
 ```
 
-> `mytheme` _will be the directory name of your theme and can be any name you want._
-
-To `push` your new theme into your own repository, follow this steps:
-
-1. Create your new theme repo
-2. `git remote rename origin upstream`
-3. `git remote add origin URL_TO_YOUR_NEW_REPO`
-4. `git push origin master`
-
-And that's it! Your local project is now `push`ing to your new repo and you're ready to go for the next step! :smile:
-
-### Local configuration
-
-Install dependencies with NPM
+## Initializing the Generator
 
 ```bash
-$ [sudo] npm install
+$ yo wp-theme-scaffold
 ```
 
-> _Use_ `sudo` _only if you're on a UNIX based system. Windows CMD/Powershell doesn't need this._
+## Local configuration
 
-Go to `Gruntfile.js` and config `proxy` for Browser Sync at line 135
+Go to `Gruntfile.js` and config `proxy` for Browser Sync at line 134
 
 ```
 proxy: "[projectDir].dev"
@@ -50,7 +37,7 @@ $ grunt
 To deploy your theme files, just run `grunt deploy`, but first you'll have to configure FTP access:
 
 1. Setting `username` and `password` in `.ftppass` file;
-2. Setting `host` and `dest` configurations (`Gruntfile.js:143` and `Gruntfile.js:148`, respectively).
+2. Setting `host` and `dest` configurations (`Gruntfile.js:142` and `Gruntfile.js:147`, respectively).
 
 ## License
 

@@ -1,0 +1,18 @@
+{
+  "name": "<%= themeKebabName %>",
+  "version": "0.1.0",
+  "description": "<%= themeDescription %>",
+  "repository": {
+    "type": "git",
+    "url": "<%= themeRepository %>"
+  },
+  "author": {
+    "name": "<%= themeAuthorName %>",
+    "email": "<%= themeAuthorEmail %>"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "<%= themeRepository %>/issues"
+  },
+  "homepage": "<%= themeRepository %>"
+}
