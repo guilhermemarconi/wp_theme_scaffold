@@ -1,0 +1,13 @@
+/*!
+Theme Name: <%= themeName %>
+Description: <%= themeDescription %>
+Version: 0.1.0
+Author: <%= themeAuthorName %>
+*/
+
+@import 'base';
+@import 'header';
+@import 'footer';
+@import 'loop';
+@import 'single';
+@import 'sidebar';
