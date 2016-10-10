@@ -38,7 +38,7 @@ module.exports = generators.Base.extend({
       type    : 'input',
       name    : 'description',
       message : 'Theme Description',
-      default : 'Template VTEX'
+      default : 'My Awesome Theme'
     }, {
       type    : 'input',
       name    : 'repository',
