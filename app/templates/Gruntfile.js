@@ -131,7 +131,7 @@ module.exports = function(grunt) {
         },
         options: {
           watchTask: true,
-          proxy: "<%= themeKebabName %>.dev"
+          proxy: "<%= localUrl %>"
         }
       }
     },
@@ -139,7 +139,7 @@ module.exports = function(grunt) {
     ftpush: {
       build: {
         auth: {
-          host: "ftp.domain.com",
+          host: "ftp.<%= siteUrl %>",
           port: 21,
           authKey: "key1"
         },
