@@ -41,6 +41,16 @@ module.exports = generators.Base.extend({
       default : 'My Awesome Theme'
     }, {
       type    : 'input',
+      name    : 'siteUrl',
+      message : 'URL of the WordPress website (without http://www)',
+      default : 'mywebsite.com'
+    }, {
+      type    : 'input',
+      name    : 'localUrl',
+      message : 'URL of the local project (for Proxy configuration)',
+      default : 'mywebsite.dev'
+    }, {
+      type    : 'input',
       name    : 'repository',
       message : 'URL of the remote repository'
     }, {
@@ -55,6 +65,8 @@ module.exports = generators.Base.extend({
       this.themeName = answers.name;
       this.themeKebabName = _.kebabCase(answers.name);
       this.themeDescription = answers.description;
+      this.siteUrl = answers.siteUrl;
+      this.localUrl = answers.localUrl;
       this.themeRepository = answers.repository;
       this.themeAuthorName = answers.authorName;
       this.themeAuthorEmail = answers.authorEmail;
@@ -65,6 +77,8 @@ module.exports = generators.Base.extend({
       themeName: this.themeName,
       themeKebabName: this.themeKebabName,
       themeDescription: this.themeDescription,
+      siteUrl: this.siteUrl,
+      localUrl: this.localUrl,
       themeRepository: this.themeRepository,
       themeAuthorName: this.themeAuthorName,
       themeAuthorEmail: this.themeAuthorEmail
