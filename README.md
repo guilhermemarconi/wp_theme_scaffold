@@ -12,21 +12,17 @@ $ npm i -g yeoman generator-wp-theme-scaffold
 
 ## Initializing the Generator
 
+After installing and configuring your local WordPress, create your theme folder on `wp-content/themes` directory.
+
+After that, inside your theme's folder, run the Generator.
+
 ```bash
 $ yo wp-theme-scaffold
 ```
 
-## Local configuration
+### Starting development
 
-Go to `Gruntfile.js` and config `proxy` for Browser Sync at line 134
-
-```
-proxy: "[projectDir].dev"
-```
-
-> `[projectDir].dev` _uses my_ `Vagrant` _server as proxy. You must configure your own local server._
-
-Run `Grunt`
+Enter on the theme's folder and run Grunt.
 
 ```bash
 $ grunt
@@ -34,10 +30,7 @@ $ grunt
 
 ### Deploy
 
-To deploy your theme files, just run `grunt deploy`, but first you'll have to configure FTP access:
-
-1. Setting `username` and `password` in `.ftppass` file;
-2. Setting `host` and `dest` configurations (`Gruntfile.js:142` and `Gruntfile.js:147`, respectively).
+To deploy your theme files, just run `grunt deploy`, but first you'll have to configure FTP access, setting `username` and `password` in `.ftppass` file;
 
 ## License
 
